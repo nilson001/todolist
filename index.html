@@ -46,7 +46,7 @@
         </div>
         <button id="cancel-edit-btn">Cancelar</button>
       </form>
-      <div class="toolbar">
+      <div id="toolbar">
         <div id="search">
           <h4>Pesquisar:</h4>
           <form>
@@ -56,14 +56,15 @@
             </button>
           </form>
         </div>
-      </div>
-      <div id="filter">
-        <h4>Filtar:</h4>
-        <select id="filter-select">
-          <option value="all">Todas</option>
-          <option value="done">Feitas</option>
-          <option value="todo">A fazer</option>
-        </select>
+
+        <div id="filter">
+          <h4>Filtar:</h4>
+          <select id="filter-select">
+            <option value="all">Todas</option>
+            <option value="done">Feitas</option>
+            <option value="todo">A fazer</option>
+          </select>
+        </div>
       </div>
 
       <div id="todo-list">
@@ -79,7 +80,7 @@
             <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
-        <div class="todo">
+        <div class="todo done">
           <h3>Estudar Javascript hoje...</h3>
           <button class="finish-todo">
             <i class="fa-solid fa-check"></i>
